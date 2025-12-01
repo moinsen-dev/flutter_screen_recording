@@ -6,8 +6,9 @@ import 'flutter_screen_recording_platform_interface.dart';
 
 class MethodChannelFlutterScreenRecording
     extends FlutterScreenRecordingPlatform {
-  static const MethodChannel _channel =
-      const MethodChannel('flutter_screen_recording');
+  static const MethodChannel _channel = const MethodChannel(
+    'flutter_screen_recording',
+  );
 
   Future<bool> startRecordScreen(
     String name, {
